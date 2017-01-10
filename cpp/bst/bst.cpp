@@ -21,6 +21,21 @@ Node* Insert(Node* root, int data) {
   }
   return root; // -_-
 }
+
+bool Search(Node* root, int data) {
+  if(root == NULL) {
+    return false;
+  }
+  else if(root->data == data) return true;
+  else if(data <= root->data) return Search(root->left, data);
+  else return Search(root->right, data);
+}
+
+Node* Delete(Node* root, int data) {
+  if(!Search(root, data)) return root;
+
+  return root;
+}
 /* print_v1
 print all data in BT.
 
