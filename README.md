@@ -1,7 +1,7 @@
 # random_repo
 random code
 
-# opensource contribute
+# Open source contribution
 https://github.com/ellaism/ellawallet/pull/1
 
 https://github.com/ellaism/ellawallet/pull/2
