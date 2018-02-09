@@ -51,3 +51,15 @@ end
 s = Time.now
 puts peak_finder2([1,2,3,4,5,6,7])
 puts (Time.now - s)*1000 #0.040
+
+
+def peak_finder_2d(arr)
+
+end
+
+s = Time.now
+puts peak_finder_2d([[10,8,10,10],
+                     [14,13,12,11],
+                     [15,9,12,21],
+                     [16,17,19,20])
+puts (Time.now - s)*1000
