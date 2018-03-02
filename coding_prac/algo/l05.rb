@@ -42,7 +42,7 @@ class BST
         travel(root.right, h, l+1) if root.right
         return h
     end
-
+    #recursive inorder, preorder, postorder
     def self.inorder_travel(root)
         return if root.nil?
         inorder_travel(root.left)
