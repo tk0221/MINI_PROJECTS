@@ -21,4 +21,28 @@ def subsets2(arr)
     end
 
     return ans
-end                                                                                                                                                            
+end
+
+
+def subsets3(nums)
+    return [[]] if nums.empty?
+    old = subsets3(nums.drop(1))
+    new = []
+    old.each do |sub|
+        new << sub + [nums.first]
+    end
+    return new + old
+end
+
+
+arr = [1,3,5,7,9,2,4,6,8,10,11,12,13,14,15,16,17]
+
+start = Time.now
+#subsets(arr) #TLE
+p (Time.now - start)*1000
+start = Time.now
+subsets2(arr)
+p (Time.now - start)*1000
+start = Time.now
+subsets3(arr)
+p (Time.now - start)*1000
