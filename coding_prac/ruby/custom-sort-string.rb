@@ -8,6 +8,7 @@ def custom_sort_string(s, t)
 
     # "abcd" => [h["a"], h["b"]...] 
     str_arr = []
+
     (0...t.size).each do |i|
         str_arr << h[t[i]]
     end
@@ -37,4 +38,23 @@ def h_generate(s = "")
     end
     
     return h
+end
+#alt way
+# @param {String} s
+# @param {String} t
+# @return {String}
+def custom_sort_string(s, t)
+    h = {}
+    (0...t.size).each do |i|
+        h[t[i]].nil? ? h[t[i]] = 1 : h[t[i]] += 1
+    end
+    res = ""
+    (0...s.size).each do |i|
+        res+=s[i] * h[s[i]]
+        h.delete(s[i])
+    end
+    h.sort.each do |k,v|
+        res+= k*v
+    end
+    return res
 end
