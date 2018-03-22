@@ -3,7 +3,7 @@ Warmining up before interview
 
 https://leetcode.com/problems/subsets/description/
 
- - subset, DP, backtracking ?
+ - subset, DP, backtracking ? (https://github.com/tk0221/MINI_PROJECTS/blob/master/leetcode/subsets.rb)
 
 
 Couldn't solve without knowing tricks
