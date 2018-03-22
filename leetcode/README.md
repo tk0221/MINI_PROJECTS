@@ -11,4 +11,4 @@ Couldn't solve without knowing tricks
 
 https://leetcode.com/problems/sort-colors/description/
 
-- 3 way partition, DNF
+- 3 way partition, DNF (https://github.com/tk0221/MINI_PROJECTS/blob/master/leetcode/sort-colors.rb)
