@@ -1,6 +1,7 @@
 # Self Check-up
 
 * Q1 - Create Subset of an array. (i.e. `[1,2]` -> `[[],[1],[2],[1,2]]`)
+  * ans : https://repl.it/@tk0221/algo-q1
 * Q2 - Letter comb
 * Q3 - Search smallest element in arrays below
   * Unsorted array, like `[9,2,1,8,5,6,7,4,3]`
