@@ -14,5 +14,5 @@
 
 # algo
 
-three way partition (dnf algorithm) O(n)
-https://github.com/tk0221/MINI_PROJECTS/blob/master/algo/dnf.rb
+* three way partition (dnf algorithm) 
+  * O(n) https://github.com/tk0221/MINI_PROJECTS/blob/master/algo/dnf.rb
