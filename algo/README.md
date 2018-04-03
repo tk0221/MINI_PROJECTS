@@ -10,3 +10,9 @@
   * What is runtime for each case?
 * Q4 - Find LCA(Least common ancestor) between two nodes in binary tree.
 * Q5 - Find kth element in array. (i.e. `k = 3`, `arr = [6,3,2,5]` answer is 5)
+
+
+# algo
+
+three way partition (dnf algorithm) O(n)
+https://github.com/tk0221/MINI_PROJECTS/blob/master/algo/dnf.rb
