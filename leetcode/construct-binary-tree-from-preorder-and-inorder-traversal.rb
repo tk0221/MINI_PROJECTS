@@ -24,3 +24,13 @@ def build_tree(preorder, inorder)
     
     return root
 end
+
+
+def build_tree_short(preorder, inorder)
+    return if inorder.empty?
+    root = TreeNode.new(preorder.shift)
+    i = inorder.index(root.val)
+    root.left = build_tree(preorder, inorder[0...i])
+    root.right = build_tree(preorder, inorder[i+1..-1])
+    root
+end
