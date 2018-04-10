@@ -3,7 +3,7 @@ def three_way_partition(nums, target)
     
     n = nums.size - 1
     
-    while j<= n
+    while j <= n
         if nums[j] < target
             nums[i], nums[j] = nums[j], nums[i]
             i += 1
@@ -15,9 +15,8 @@ def three_way_partition(nums, target)
             j += 1
         end
     end
+    
     return nums
-    
-    
 end
 
 # https://en.wikipedia.org/wiki/Dutch_national_flag_problem
