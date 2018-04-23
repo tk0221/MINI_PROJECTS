@@ -1,6 +1,14 @@
 Warmining up before interview
 ------------------------------
 
+https://leetcode.com/problems/jump-game/
+
+ - https://github.com/tk0221/MINI_PROJECTS/blob/master/leetcode/jump-game.rb
+
+https://leetcode.com/problems/jump-game-ii/description/
+
+ - 
+
 https://leetcode.com/problems/subsets/description/
 
  - subset, DP, backtracking ? (https://github.com/tk0221/MINI_PROJECTS/blob/master/leetcode/subsets.rb)
