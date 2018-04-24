@@ -1,0 +1,22 @@
+# naive ver
+# @param {String} s
+# @return {Integer}
+def longest_palindrome(s)
+    
+    h = {}
+    (0...s.size).each do |i|
+        if h[s[i]].nil?
+            h[s[i]] = 1
+        else
+            h[s[i]] += 1
+        end
+    end
+    res = 0
+    arr = h.values
+    (0...arr.size).each do |i|
+        res= res + ( (arr[i]/2) * 2)
+        arr[i] = arr[i]%2
+    end
+    res +=1 if arr.include?(1)
+    return res
+end
