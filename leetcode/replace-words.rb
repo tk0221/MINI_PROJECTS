@@ -19,15 +19,7 @@ class Node
         @children[ch].insert(word[1..-1])
     end
 
-    def find(word)
-        return @term if word.empty?
-        ch = word.first
-        return false if @children[ch].nil?
-        @children[ch].find(word[1..-1])
-    end
-
     def check(word, sofar="")
-
         return sofar if @term
         return @term if word.empty?
         ch = word.first
@@ -49,29 +41,21 @@ class Trie
         @root.insert(word.split(""))
     end
 
-    def find(word)
-        @root.find(word.split(""))
-    end
-    
     def check(word)
         @root.check(word.split(""))
     end
-
 end 
 
 
 def replace_words(dict, sentence)
-    
     arr = sentence.split(" ")
     root = Trie.new
     dict.each do |d|
         root.insert(d)
     end
     (0...arr.size).each do |i|
-        word = arr[i]
-        tmp = root.check(word)
+        tmp = root.check(arr[i])
         arr[i] = tmp if tmp
     end
     return arr.join(" ")
-    
 end
